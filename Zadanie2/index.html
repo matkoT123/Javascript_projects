@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Predaj korytnačiek</h1>
+
+    <form class=".form" id="form" onsubmit="validateForm()" 
+    action="https://form2mail.hynix.sk/form2mail.php" method="post" enctype="multipart/form-data">
+
+    <input type="hidden" name="apikey" value="7e5fecac036329f64e164cf8a8fddb45">
+        <input type="hidden" name="from" value="xtremko@stuba.sk">
+        <input type="hidden" name="to" value="feistu02@gmail.com">
+        <input type="hidden" name="subject" value="Martin Tremko">
+        <input type="hidden" name="redirectOk" value="https://webte1.fei.stuba.sk/~xtremko/FormNoJo/">
+        <input type="hidden" name="redirectFalse" value>
+
+        <div class="container">
+            <div class="item">
+                <fieldset>
+                    <legend>Osobné údaje</legend>
+                    <div class="osUdaje">
+                        <div class="line">
+                            <label for="firstName">Meno:</label>
+                            <label id="firstNameCount" class="count"></label><br>
+                            <input id="firstName" class="text" type="text" name="name: " maxlength="20">
+                            <p id="errorName"></p>
+                        </div>
+                        <div class="line">
+                            <label for="surname">Priezvisko:</label>
+                            <label id="surnameCount" class="count"></label><br>
+                            <input id="surname" class="text" type="text" name="surname: " maxlength="20">
+                            <p id="errorSurname"></p>
+                        </div>
+                        <div class="line">
+                            <div>
+                                <label for="male">
+                                    <input id="male" class="mini" type="radio" name="genre">
+                                    Male</label>
+                            </div>
+                            <div>
+                                <label for="female">
+                                    <input id="female" class="mini" type="radio" name="genre">
+                                    Female</label>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <label for="date">Dátum narodenia:</label><br>
+                            <input id="date" class="text" type="date" name="date: ">
+                            <p id="dateError"></p>
+                        </div>
+                        <div class="line">
+                            <label for="age">Vek:</label><br>
+                            <input id="age" class="text" type="number" min="1" max="200" name="vek: ">
+                            <p id="errorAge"></p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="item">
+                <fieldset>
+                    <legend>Adresa/Kontakt</legend>
+                    <div class="osUdaje">
+                        <div class="line">
+                            <label for="country">Krajina</label>
+                            <label id="countryCount" class="count"></label><br>
+                            <input id="country" class="text" type="text" name="krajina: " maxlength="20">
+                            <p id="errorCountry"></p>
+                        </div>
+                        <div class="line">
+                            <label for="address">Adresa</label>
+                            <label id="addressCount" class="count"></label><br>
+                            <input id="address" class="text" type="text" name="adresa: " maxlength="20">
+                            <p id="errorAddress"></p>
+                        </div>
+                        <div class="line">
+                            <label for="postalCode">PSČ</label>
+                            <label id="postalCodeCount" class="count"></label><br>
+                            <input id="postalCode" class="text" type="text" maxlength="20" name="postove smerovacie cislo: ">
+                            <p id="errorPostalCode"></p>
+                        </div>
+                        <div class="line">
+                            <label for="email">Email:</label><br>
+                            <input id="email" type="email" class="text" placeholder="Vy@priklad.com" name="email: ">
+                            <p id="emailError"></p>
+                        </div>
+                        <div class="line">
+                            <label for="phoneNum">Tel. číslo:</label><br>
+                            <input id="phoneNum" type="tel" class="text" placeholder="+421 xxx xxx xxx" maxlength="20" name="tel. cislo: ">
+                            <p id="phoneNumError"></p>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+            <div class="item">
+                <fieldset>
+                    <legend>Voľba korytnačky</legend>
+                    <div class="osUdaje">
+                        <div class="line">
+                            <select id="turtle"  name="typ: ">
+                                <option value="" selected="selected">Zvoliť typ</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <select id="kind">
+                                <option value="" selected="selected" name="druh: ">Zvoliť druh</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <select id="color">
+                                <option value="" selected="selected" name="farba: ">Zvoliť farbu</option>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <label for="textArea">Poznámka k objednávke: </label>
+                            <textarea id="textArea" rows="5" cols="33" placeholder="Sem zadajte text" name="poznamka: "></textarea>
+                        </div>
+                        <div> 
+                            <input id="klikninamna" class="klikniNaMna" type="button" value="klikni na mňa" name="podpis: ">
+                            <div id="menoPodpis" style="display: none">
+                                <input type="text" placeholder="zadajte svoj podpis">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="item">
+                <fieldset>
+                    <legend>Dodatočné informácie</legend>
+                    <div class="osUdaje">
+                        <div class="line">
+                            <input id="neskusenost" class="mini" type="radio" name="lic">
+                            <label for="neskusenost">Nemám skúsenosť s chovom korytnačiek</label>
+                        </div>
+                        <div class="line">
+                            <input id="skusenost" class="mini" type="radio" name="lic">
+                            <label for="skusenost">Mám skúsenosť s chovom korytnačiek</label>
+                            <div id="licencia" style="display: none">
+                                <p>Zadajte cislo licencie: </p>
+                                <input type="text" class="liceNum">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Chcem prispieť</label>
+                            <div class="line">
+                                <label for="1euro">1€
+                                    <input class="mini" type="checkbox" id="1euro" value="5€" name="prispevok: ">
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label for="2eura">2€
+                                    <input class="mini" type="checkbox" id="2eura" value="2€" name="prispevok: ">
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label for="5eura">5€
+                                    <input class="mini" type="checkbox" id="5eura" value="5€" name="prispevok: ">
+                                </label>
+                            </div>
+                            <div class="line">
+                                <label for="prispevok">vlastná suma
+                                    <input class="mini" id="prispevok" type="checkbox" name="pripevok: ">
+                                </label>
+                                <div id="vlastnaSuma" style="display: none">
+                                    <p>Zadajte sumu: </p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+        <div class="parent">
+            <input class="send" type="button" id="submit" value="odoslat">
+            <p id="submitError" class="submitError"></p>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h1>Zhrnutie objednávky</h1>
+                <div class="column1">
+                    <p id="nameModal">Meno: </p>
+                    <p id="vekModal">Vek: </p>
+                    <p id="krajinaModal">Krajina: </p>
+                    <p id="adresaModal">Adresa: </p>
+                    <p id="pscModal">PSČ: </p>
+                    <p id="emailModal">Email: </p>
+                    <p id="telNumModal">Telefónne číslo: </p>
+                    <p id="turtleModal">Zvolená korytnačka: </p>
+                    <p id="prize">Cena: </p>
+                </div>
+                <button class="send" type="submit">Odoslať objednávku</button>
+                <div class="column2">
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
