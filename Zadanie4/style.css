@@ -1,0 +1,58 @@
+.container {
+    text-align: center;
+    padding: 5rem;
+}
+
+img {
+    min-width: 25rem;
+    min-height: 25rem;
+    padding: 0.5rem;
+    object-fit: cover;
+}
+
+img {
+    min-width: 25rem;
+    min-height: 25rem;
+    padding: 0.5rem;
+    object-fit: cover;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+
+
+@media screen and (max-width: 1399px) {
+    img {
+        min-width: 20rem;
+        min-height: 20rem;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    img {
+        min-width: 17rem;
+        min-height: 17rem;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    img {
+        min-width: 12rem;
+        min-height: 12rem;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+

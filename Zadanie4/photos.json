@@ -1,0 +1,94 @@
+{
+    "photos": [
+        {
+            "id": 1,
+            "title": "OPICA1",
+            "name": "OPICA1.jpg",
+            "description": "Pekny opiciak",
+            "dateAndTime": "24.6.2021 16:30",
+            "GPS": "48.15221497148051 17.073369949607773",
+            "path": "./photos/Opica1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "OPICA2",
+            "name": "OPICA2.jpg",
+            "description": "skaredy opiciak",
+            "dateAndTime": "28.6.2021 17:30",
+            "GPS": "48.1433542611548 17.097841650906684",
+            "path": "./photos/OPICA2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "OPICA3",
+            "name": "OPICA3.jpg",
+            "description": "ruzovy opiciak",
+            "dateAndTime": "27.6.2021 12:30",
+            "GPS": "48.15918490165881 17.064134740282668",
+            "path": "./photos/OPICA3.jpg"
+        },
+        {
+            "id": 4,
+            "title": "OPICA4",
+            "name": "OPICA4.webp",
+            "description": "pekny opiciak",
+            "dateAndTime": "30.6.2021 21:30",
+            "GPS": "48.153546316184645 17.071555126695987",
+            "path": "./photos//OPICA4.webp"
+        },
+        {
+            "id": 5,
+            "title": "OPICA5",
+            "name": "OPICA5.webp",
+            "description": "obycajny opiciak",
+            "dateAndTime": "24.9.2021 10:30",
+            "GPS": "48.15918490165881 17.064134740282668",
+            "path": "./photos/OPICA5.webp"
+        },
+        {
+            "id": 6,
+            "title": "OPICA6",
+            "name": "OPICA6.jpg",
+            "description": "maly opiciak",
+            "dateAndTime": "7.2.2014 11:30",
+            "GPS": "50.077800574252215 14.436972519346273",
+            "path": "./photos/OPICA6.jpg"
+        },
+        {
+            "id": 7,
+            "title": "OPICA7",
+            "name": "OPICA7.jpg",
+            "description": "zlaty opiciak",
+            "dateAndTime": "9.6.2021 19:30",
+            "GPS": "48.7184680735823, 21.235482054409704",
+            "path": "./photos/OPICA7.webp"
+        },
+        {
+            "id": 8,
+            "title": "OPICA8",
+            "name": "OPICA8.webp",
+            "description": "zdravy opiciak",
+            "dateAndTime": "24.2.2021 7:30",
+            "GPS": "49.06651099893629, 21.24627477326032",
+            "path": "./photos/OPICA8.webp"
+        },
+        {
+            "id": 9,
+            "title": "OPICA9",
+            "name": "OPICA9.webp",
+            "description": "chory opiciak",
+            "dateAndTime": "11.6.2021 15:30",
+            "GPS": "49.056221009472075 20.29395533706569",
+            "path": "./photos/OPICA9.webp"
+        },
+        {
+            "id": 10,
+            "title": "OPICA10",
+            "name": "OPICA10.webp",
+            "description": "cierny opiciak",
+            "dateAndTime": "5.3.2021 5:37",
+            "GPS": "49.00075543651761 20.752124476249477",
+            "path": "./photos/OPICA10.webp"
+        }
+    ]
+}
