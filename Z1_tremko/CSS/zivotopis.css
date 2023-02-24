@@ -1,0 +1,250 @@
+@font-face {
+    font-family: novyFont;
+    src: url("Sports World-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: novyFont;
+}
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #831135;
+}
+
+.container {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+nav ul {
+    background-color: #831135;
+}
+
+/*li*/
+
+nav ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.border {
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+#zivotopis {
+    padding-right: 0;
+}
+
+nav ul li a {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#oMne {
+    padding-left: 1rem;
+}
+
+#zivotopis {
+    padding-right: 1rem;
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    float: right;
+    margin-top: -2.5rem;
+}
+
+/*nadpis*/
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+    color: rgb(35, 35, 35);
+}
+
+/*životopis*/
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.flex-item {
+    min-width: none;
+    border: 2px solid black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.flex-item-1 {
+    width: 20rem;
+    background-color: rgb(186, 186, 186);
+    border-right: 2px solid black;
+}
+
+.flex-item-2 {
+    width: 40rem;
+    background-color: rgb(214, 214, 214);
+    border-left: 2px solid black;
+}
+
+img {
+    display: block;
+    width: 16rem;
+    height: 21rem;
+    padding: 0.5rem;
+    margin-top: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(35, 35, 35);
+    color: #831135;
+}
+
+#kontaktNadpis {
+    padding-top: 0.4rem;
+}
+
+main ul {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+
+#zozanmJazykov {
+    padding-bottom: 1rem;
+}
+
+main ul li {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(35, 35, 35);
+}
+
+strong {
+    color: #831135;
+}
+
+footer {
+    display: block;
+    width: 100%;
+}
+
+.footerContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    background-color: #21252f;
+}
+
+.f-item {
+    width: 25rem;
+    height: 10rem;
+    padding: 2rem;
+    padding-left: 7rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 0.1rem;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer ul li a {
+    color: rgb(233, 233, 233);
+}
+
+footer p {
+    margin-top: 1rem;
+    color: rgb(233, 233, 233);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .border {
+        border-right: none;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .flex-item {
+        box-shadow: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .flex-item-1 {
+        width: 40rem;
+        border-bottom: none;
+    }
+
+    .flex-item-2 {
+        width: 40rem;
+        background-color: rgb(186, 186, 186);
+        border-top: none;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    ul li a {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+}

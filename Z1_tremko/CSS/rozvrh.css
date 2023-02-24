@@ -1,0 +1,247 @@
+/*Cela stranka*/
+
+@font-face {
+    font-family: novyFont;
+    src: url("Sports World-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: novyFont;
+    font-weight: 100;
+}
+
+/*Menu*/
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #831135;
+}
+
+.container {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+nav ul {
+    background-color: #831135;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.border {
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+#oMne {
+    padding-left: 0;
+}
+
+#logoL {
+    position: relative;
+    margin-left: 30rem;
+}
+
+#zivotopis {
+    padding-right: 0;
+}
+
+nav ul li a {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#rozvrh {
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    float: right;
+    margin-top: -2.5rem;
+}
+
+main section h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    text-decoration: underline;
+    color: rgb(45, 45, 45);
+}
+
+/*Rozvrh - tabulka*/
+table {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 2.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.thead {
+    background-color: rgb(104, 104, 104);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+table tr th {
+    width: 6rem;
+    border-bottom: 1px solid black;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    width: 5rem;
+    text-align: center;
+}
+
+tbody tr td:first-of-type,
+thead tr th:first-of-type {
+    border-right: 1px solid black;
+}
+
+.prednaska {
+    background-color: rgb(205, 81, 98);
+    border: 1px solid black;
+}
+
+.cvicenie {
+    background-color: rgb(50, 174, 215);
+    border: 1px solid black;
+}
+
+.timetable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.timetable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.timetable tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(104, 104, 104);
+}
+
+footer {
+    display: block;
+    width: 100%;
+}
+
+.footerContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    background-color: #21252f;
+}
+
+.f-item {
+    width: 20rem;
+    height: 7rem;
+    padding: 2rem;
+    padding-left: 7rem;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+    padding: 0.1rem;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer ul li a {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 1rem;
+    color: rgb(233, 233, 233);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*Responzivita*/
+@media screen and (max-width: 1000px) {
+
+    table {
+        width: 90%;
+
+    }
+
+    .border {
+        border-right: none;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #oMne {
+        padding-left: 1rem;
+    }
+
+    #zivotopis {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    ul li a {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+
+}

@@ -1,0 +1,254 @@
+@font-face {
+    font-family: novyFont;
+    src: url("Sports World-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: novyFont;
+}
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #831135;
+}
+
+.container {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+nav ul {
+    background-color: #831135;
+}
+
+/*li*/
+nav ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.border {
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+#oMne {
+    padding-left: 0;
+}
+
+#zivotopis {
+    padding-right: 0;
+}
+
+nav ul li a {
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    float: right;
+    margin-top: -2.5rem;
+}
+
+#obrazok {
+    text-decoration: underline;
+}
+
+/*nadpis*/
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    text-decoration: underline;
+    color: rgb(45, 45, 45);
+}
+
+.container1 {
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 60%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.pointer {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(237, 240, 59);
+    position: absolute;
+    padding: 1rem;
+}
+
+.pointer:focus {
+    background-color: #fff;
+}
+
+.pointer div {
+    display: none;
+}
+
+.pointer:focus div {
+    display: block;
+    border: 3px solid #fff;
+    position: absolute;
+    width: 15rem;
+    background-color: rgb(186, 186, 186);
+    z-index: 2;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+
+/*Martin*/
+#martin {
+    top: 61%;
+    left: 32.5%;
+}
+
+/*Damian*/
+#damian {
+    top: 51%;
+    left: 48.5%;
+}
+
+/*Terka*/
+#terka {
+    top: 63%;
+    left: 70.5%;
+}
+
+/*Nahodna osoba*/
+#nahodnaOsoba {
+    top: 4.5%;
+    left: 29%;
+}
+
+footer {
+    display: block;
+    width: 100%;
+}
+
+.footerContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    background-color: #21252f;
+}
+
+.f-item {
+    width: 25rem;
+    height: 10rem;
+    padding: 2rem;
+    padding-left: 7rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 0.1rem;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer ul li a {
+    color: rgb(233, 233, 233);
+}
+
+footer p {
+    margin-top: 1rem;
+    color: rgb(233, 233, 233);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .pointer:focus div {
+        width: 10rem;
+    }
+
+    #terka:focus div {
+        left: -8.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .border {
+        border-right: none;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    #oMne {
+        padding-left: 1rem;
+    }
+
+    #zivotopis {
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    ul li a {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+
+}

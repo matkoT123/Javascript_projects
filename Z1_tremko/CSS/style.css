@@ -1,0 +1,219 @@
+/*Cela stránka*/
+@font-face {
+    font-family: novyFont;
+    src: url("Sports World-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: novyFont;
+}
+
+/*Horné menu*/
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #831135;
+}
+
+.container {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+nav ul {
+    background-color: #831135;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.border {
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+#zivotopis {
+    padding-right: 0;
+}
+
+nav ul li a {
+    color: rgb(233, 233, 233);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+#oMne {
+    padding-left: 0;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    float: right;
+    margin-top: -2.5rem;
+}
+
+/*nadpis*/
+main h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+    color: rgb(45, 45, 45);
+}
+
+/*clanky*/
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.flex-item {
+    width: 27rem;
+    min-width: none;
+}
+
+img {
+    width: 24.7rem;
+    margin-left: 1rem;
+    margin-top: 1.25rem;
+}
+
+main p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(45, 45, 45);
+}
+
+.firstP {
+    padding-bottom: 0;
+}
+
+.popisObrazka {
+    padding-top: 1rem;
+}
+
+aside {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    width: 100%;
+}
+
+.footerContainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    background-color: #21252f;
+}
+
+.f-item {
+    width: 25rem;
+    height: 10rem;
+    padding: 2rem;
+    padding-left: 7rem;
+}
+
+footer h2 {
+    font-size: 2rem;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 0.1rem;
+    text-decoration: none;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer ul li a {
+    color: rgb(233, 233, 233);
+}
+
+footer p {
+    margin-top: 1rem;
+    color: rgb(233, 233, 233);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .border {
+        border-right: none;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #oMne {
+        padding-left: 1rem;
+    }
+
+    #zivotopis {
+        padding-right: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    ul li a {
+        font-size: 1rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    img {
+        width: 22rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
