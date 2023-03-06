@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+          maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+            integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.js"
+            integrity="sha512-h3RrO+eudpiPUYFkwORXD2ppuy9jOXQ+MzVEIo7k+OuA7y9Ze5jsQ5WN/ZSgI+ZSIngT6pDSaqpgmnam2HPe1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script rel="script" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Flags Drop</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
+
+</head>
+<body>
+    <div class="modalGame" id="modalGame"></div>
+
+    <div class="modalDifficulty" id="modalDifficulty">
+        <div class="modalTitle">
+            <h3>Choose Difficulty</h3>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="startGameEasy()">Easy</button>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="startGameHard()">Hard</button>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <div class="modalRules" id="modalRules">
+        <div class="modalTitle">
+            <h3>Rules</h3>
+        </div>
+        <article><b>EASY</b> - Drag flag that matches country stated in dashed box to dashed box. Every time you start dragging incorrect flag, mistake will be counted.</article>
+        <article><b>HARD</b> - Drag country shape that matches country stated in dashed box to dashed box. Every time you start dragging incorrect shape, mistake will be counted.</article>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <div class="modalAuthors" id="modalAuthors">
+        <div class="modalTitle">
+            <h3>Authors</h3>
+        </div>
+        <article>Made by <b>Martin Tremko</b> & <b>Juraj Cajka</b></article>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="modalTitle">
+            <h3>Flags Drop</h3>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="openModalDifficulty()">Start Game</button>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="openModalRules()">Rules</button>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="openModalAuthors()">Authors</button>
+        </div>
+        <div class="buttonDiv">
+            <button class="button-35" type="button" onclick="self.close()">Exit</button>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(reg => console.log('Service Worker: Registered'))
+                    .catch(err => console.log(`Service Worker: Error: ${err}`));
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+{
+    "questionFlags": "Choose correct flag to match: ",
+    "questionShapes": "Choose correct shape to match: ",
+    "flags": [
+        {
+            "id": "argentina",
+            "title": "Argentina",
+            "path": "./flags/Argentina.png"
+        },
+        {
+            "id": "britania",
+            "title": "Britania",
+            "path": "./flags/Britania.png"
+        },
+        {
+            "id": "india",
+            "title": "India",
+            "path": "./flags/India.png"
+        },
+        {
+            "id": "china",
+            "title": "China",
+            "path": "./flags/China.png"
+        },
+        {
+            "id": "usa",
+            "title": "Usa",
+            "path": "./flags/Usa.png"
+        },
+        {
+            "id": "australia",
+            "title": "Australia",
+            "path": "./flags/Australia.png"
+        },
+        {
+            "id": "canada",
+            "title": "Canada",
+            "path": "./flags/Canada.png"
+        },
+        {
+            "id": "brazil",
+            "title": "Brazilia",
+            "path": "./flags/Brazil.png"
+        },
+        {
+            "id": "germany",
+            "title": "Nemecko",
+            "path": "./flags/Germany.png"
+        },
+        {
+            "id": "turkey",
+            "title": "Turecko",
+            "path": "./flags/Turkey.png"
+        },
+        {
+            "id": "italy",
+            "title": "Taliansko",
+            "path": "./flags/Italy.png"
+        },
+        {
+            "id": "japan",
+            "title": "Japonsko",
+            "path": "./flags/Japan.png"
+        },
+        {
+            "id": "mexico",
+            "title": "Mexiko",
+            "path": "./flags/Mexico.png"
+        },
+        {
+            "id": "russia",
+            "title": "Rusko",
+            "path": "./flags/Russia.png"
+        },
+        {
+            "id": "saudiArabia",
+            "title": "Saudi Arabi",
+            "path": "./flags/SaudiArabia.png"
+        },
+        {
+            "id": "southKorea",
+            "title": "South Korea",
+            "path": "./flags/SouthKorea.png"
+        },
+        {
+            "id": "southAfrica",
+            "title": "South Africa",
+            "path": "./flags/SouthAfrica.png"
+        }
+    ],
+
+    "shapes": [
+        {
+            "id": "argentina",
+            "title": "Argentina",
+            "path": "./shapes/Argentina.png"
+        },
+        {
+            "id": "britania",
+            "title": "Britania",
+            "path": "./shapes/Britania.png"
+        },
+        {
+            "id": "india",
+            "title": "India",
+            "path": "./shapes/India.png"
+        },
+        {
+            "id": "china",
+            "title": "China",
+            "path": "./shapes/China.png"
+        },
+        {
+            "id": "usa",
+            "title": "Usa",
+            "path": "./shapes/Usa.png"
+        },
+        {
+            "id": "australia",
+            "title": "Australia",
+            "path": "./shapes/Australia.png"
+        },
+        {
+            "id": "canada",
+            "title": "Canada",
+            "path": "./shapes/Canada.png"
+        },
+        {
+            "id": "brazil",
+            "title": "Brazilia",
+            "path": "./shapes/Brazil.png"
+        },
+        {
+            "id": "germany",
+            "title": "Nemecko",
+            "path": "./shapes/Germany.png"
+        },
+        {
+            "id": "turkey",
+            "title": "Turecko",
+            "path": "./shapes/Turkey.png"
+        },
+        {
+            "id": "italy",
+            "title": "Taliansko",
+            "path": "./shapes/Italy.png"
+        },
+        {
+            "id": "japan",
+            "title": "Japonsko",
+            "path": "./shapes/Japan.png"
+        },
+        {
+            "id": "mexico",
+            "title": "Mexiko",
+            "path": "./shapes/Mexico.png"
+        },
+        {
+            "id": "russia",
+            "title": "Rusko",
+            "path": "./shapes/Russia.png"
+        },
+        {
+            "id": "saudiArabia",
+            "title": "Saudi Arabi",
+            "path": "./shapes/SaudiArabia.png"
+        },
+        {
+            "id": "southKorea",
+            "title": "South Korea",
+            "path": "./shapes/SouthKorea.png"
+        },
+        {
+            "id": "southAfrica",
+            "title": "South Africa",
+            "path": "./shapes/SouthAfrica.png"
+        }
+    ]
+}
